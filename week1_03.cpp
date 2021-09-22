@@ -24,6 +24,9 @@ int jumpSearch(int arr[], int x, int n)
 }
 int main()
 {   
+    int test;
+    cin>>test;
+    while(test){
     int n;
     cin>>n;
     int arr[n];
@@ -35,5 +38,7 @@ int main()
     cin>>x;
     int index = jumpSearch(arr, x, n);
     cout << "\nNumber " << x << " is at index " << index;
+    test--;
+    }    
     return 0;
 }
